@@ -7,3 +7,6 @@ block content
   ul 
     each message in messages 
       li #{message.text} , #{message.user}, #{message.added}
+
+  form(method ='GET' action='./new')
+    input(type="submit") Add Message
